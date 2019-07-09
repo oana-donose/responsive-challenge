@@ -1,0 +1,53 @@
+$section-height: 10em;
+
+$bp-small : 24em;
+$bp-med : 46.8em;
+$bp-large : 52em;
+$bp-xl : 73em;
+
+body, html {
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+}
+%box {
+    height: 13em;
+    margin-top: 1em;
+    margin-right: auto;
+}
+header#first {
+    @extend %box;
+    width: 100%;
+    background-color: grey;
+}
+
+div {
+    @extend %box;
+    width: 100%;
+    background-color: grey;
+}
+#blue {
+    background-color: lightskyblue;
+    @extend %box;
+}
+
+// tablet
+@media screen and (min-width: $bp-med) {
+    
+    #blue {
+        background-color: yellow;
+    }
+}
+
+// desktop
+@media screen and (min-width: $bp-large) {
+    div.second-line {
+        width: 49.9%;
+    }
+    div.third-line {
+        width: 33%;
+    }
+    #blue {
+        background-color: red;
+    }
+}

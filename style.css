@@ -1,0 +1,47 @@
+body, html {
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header#first, div, #blue {
+  height: 13em;
+  margin-top: 1em;
+  margin-right: auto;
+}
+
+header#first {
+  width: 100%;
+  background-color: grey;
+}
+
+div {
+  width: 100%;
+  background-color: grey;
+}
+
+#blue {
+  background-color: lightskyblue;
+}
+
+@media screen and (min-width: 46.8em) {
+  #blue {
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 52em) {
+  div.second-line {
+    width: 49.9%;
+  }
+  div.third-line {
+    width: 33%;
+  }
+  #blue {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */
